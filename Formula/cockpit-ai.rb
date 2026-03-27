@@ -8,16 +8,16 @@ class CockpitAi < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/shreynshah/cockpit.ai/releases/download/v#{version}/cockpit-#{version}-darwin-arm64.tar.gz"
+      url "https://github.com/shreynshah/releases/releases/download/v#{version}/cockpit-#{version}-darwin-arm64.tar.gz"
       sha256 "27d37262b22fc000aadc6d24550bc9c366756ae89dfd86a2373285280069f662"
     else
-      url "https://github.com/shreynshah/cockpit.ai/releases/download/v#{version}/cockpit-#{version}-darwin-x64.tar.gz"
+      url "https://github.com/shreynshah/releases/releases/download/v#{version}/cockpit-#{version}-darwin-x64.tar.gz"
       sha256 ""
     end
   end
 
   on_linux do
-    url "https://github.com/shreynshah/cockpit.ai/releases/download/v#{version}/cockpit-#{version}-linux-x64.tar.gz"
+    url "https://github.com/shreynshah/releases/releases/download/v#{version}/cockpit-#{version}-linux-x64.tar.gz"
     sha256 ""
   end
 
