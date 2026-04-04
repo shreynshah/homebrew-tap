@@ -1,7 +1,7 @@
 class CockpitAi < Formula
   desc "Distributed personal agentic work orchestration system"
   homepage "https://github.com/shreynshah/cockpit.ai"
-  version "0.1.17"
+  version "0.1.18"
   license "MIT"
 
   depends_on "node@22"
@@ -9,7 +9,7 @@ class CockpitAi < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/shreynshah/releases/releases/download/v#{version}/cockpit-#{version}-darwin-arm64.tar.gz"
-      sha256 "408e02cb390e62ed748501b39186cabd2f17d5eb1e2c6483aed1394d7317df2d" # darwin-arm64
+      sha256 "f0b194aabf40d14309243cda45d6f9f8f1e6557e777af3eab962c51ae2062c00" # darwin-arm64
     else
       url "https://github.com/shreynshah/releases/releases/download/v#{version}/cockpit-#{version}-darwin-x64.tar.gz"
       sha256 "" # darwin-x64
