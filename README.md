@@ -16,7 +16,7 @@ brew install cockpit-ai
 cockpit init
 
 # Or with an existing GitHub state repo:
-cockpit init --state-repo shreynshah/cockpit-state
+cockpit init --state-repo your-org/cockpit-state
 
 # Start the daemon
 cockpitd
@@ -37,7 +37,7 @@ Open `http://localhost:3200/settings` and enable connectors:
 
 ### GitHub
 - **Auth Method:** `gh-cli` (corporate, uses `gh auth login`) or `pat` (personal, manual token)
-- **State Repo:** `owner/cockpit-state` — where Cockpit stores state and work queue issues
+- **State Repo:** `your-org/cockpit-state` — where Cockpit stores state and work queue issues
 - **Repos to Watch:** one per line — repos for PR reviews and code analysis
 
 ### Slack
